@@ -1,0 +1,12 @@
+.button-primary {
+  color: $text-white;
+  background-color: $button-primary;
+
+  &:hover {
+    background-color: $button-primary__hover;
+  }
+
+  &:active {
+    background-color: $button-primary__active;
+  }
+}

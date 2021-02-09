@@ -1,0 +1,66 @@
+// -----------------------------------------------------------------------------
+// Фрагмент стилизации какой-то секции
+// -----------------------------------------------------------------------------
+
+#hero {
+  @include background('../img/section/hero/background.jpg', $position: center center);
+}
+
+.hero {
+  position: relative;
+
+  padding-top: 220px;
+  padding-bottom: 142px;
+
+  &__foreground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__content {
+
+  }
+
+  &__title {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  &__logo {
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+
+    color: $text-white;
+    font-size: $font-size-1;
+    font-weight: $weight-regular;
+  }
+
+  &__description {
+    margin-bottom: 40px;
+  }
+
+  &__action {
+
+  }
+
+  &__button {
+    margin-bottom: 45px;
+  }
+
+  &__slogan {
+    color: $text-gray;
+
+    font-size: $font-size-1;
+    font-weight: $weight-light;
+
+    text-transform: uppercase;
+
+    strong {
+      font-weight: $weight-bold;
+    }
+  }
+}

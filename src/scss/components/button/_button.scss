@@ -1,0 +1,21 @@
+.button {
+  min-width: 250px;
+
+  outline: none;
+  border: none;
+
+  padding: 18px 40px;
+
+  font-size: $font-size-4;
+
+  cursor: pointer;
+  transition: all 0.15s ease;
+
+  &--border-left {
+    border-radius: $button-border--left;
+  }
+
+  &--border-right {
+    border-radius: $button-border--right;
+  }
+}

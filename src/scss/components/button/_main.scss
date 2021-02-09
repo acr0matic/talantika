@@ -6,9 +6,10 @@
 // Цветовая палитра кнопок
 $button-primary: #e93e3a;
 $button-primary__hover: #f2605c;
-$button-primary__active: #d13430;
+$button-primary__active: #e92e2b;
 
 $button-border--left: 13px 13px 13px 0;
 $button-border--right: 13px 13px 0 13px;
 
 @import "button";
+@import "button-primary";
