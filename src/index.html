@@ -257,6 +257,101 @@
       </div>
       <!-- /.container -->
     </section>
+
+    <section id="applicant" class="section">
+      <div class="container">
+        <div class="applicant">
+          <div class="row">
+            <div class="col-4">
+              <form class="applicant__form form ms-5">
+                <div class="row justify-content-center">
+                  <div class="col-12">
+                    <div class="form__wrapper mb-3">
+                      <h3 class="form__title">
+                        Отправь заявку <br> прямо сейчас
+                      </h3>
+
+                      <input autocomplete="off" type="text" class="input input-field input-field--error mb-4" name="user_name" placeholder="Имя">
+                      <input autocomplete="off" type="email" class="input input-field mb-4" name="user_email" placeholder="Эл. почта*">
+                      <input autocomplete="off" type="text" class="input input-field mb-4" name="user_job" placeholder="Искомая должность">
+                      <input autocomplete="off" type="phone" class="input input-field mb-4" name="user_phone" placeholder="Телефон">
+                      <input autocomplete="off" type="text" class="input input-field mb-4" name="user_city" placeholder="Город">
+
+                      <button class="form__button button button--border-right button-primary mx-auto">Отправить</button>
+                      <div class="form__error mx-auto">Ошибка при вводе!</div>
+                    </div>
+                    <!-- /.form__wrapper -->
+                  </div>
+                  <!-- /.col-12 -->
+
+                  <div class="col-10">
+                    <label class="checkbox mx-auto">
+                      <input type="checkbox">
+                      <span class="checkbox__mark me-2"></span>
+                      <span class="checkbox__label">Нажимая на кнопку Вы принимаете условия <a href="" class="checkbox__policy">политики конфиденциальности</a></span>
+                    </label>
+                  </div>
+                  <!-- /.col-10 -->
+                </div>
+                <!-- /.row -->
+              </form>
+            </div>
+            <!-- /.col-4 -->
+
+            <div class="col-5 ps-5">
+              <h2 class="section__title section__title--orange">Соискателю</h2>
+
+              <div class="applicant__content">
+                <h3 class="applicant__title">Работа должна быть актом любви, <br> а не браком по расчету. Найди свою.</h3>
+
+                <ul class="applicant__list list">
+                  Ты получишь:
+                  <li class="list__item">Работу, на которую хочется идти по утрам</li>
+                  <li class="list__item">Команду, в которой ты сможешь реализовать весь свой потенциал</li>
+                  <li class="list__item">Условия, которые тебя порадуют</li>
+                </ul>
+              </div>
+              <!-- /.applicant__content -->
+
+              <div class="applicant__contact">
+                Связаться сейчас:
+                <div class="applicant__social d-flex">
+                  <a href="" target="_blank" class="applicant__link me-4">
+                    <svg class="applicant__icon" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M42.026 0.366122L1.69624 18.4191C-0.510562 19.1735 -0.440284 21.7491 1.19303 22.3673L11.2994 26.0962L15.1648 40.1112C15.6342 41.6466 16.0194 42.2215 16.8206 42.2348C17.664 42.2481 17.9872 41.8859 18.8643 40.9686C19.8904 39.8287 21.4535 38.0373 23.9217 35.1991L34.4329 44.3818C36.367 45.6447 37.7641 44.99 38.2449 42.2581L44.8344 3.71947C45.54 0.372768 43.8757 -0.627587 42.026 0.366122ZM12.8849 25.2388L35.8581 8.19948C36.9911 7.30215 37.3453 8.3025 36.8336 8.99377L17.768 29.2701L16.7897 39.39L12.8849 25.2388Z"
+                        fill="#53C3BD" />
+                    </svg>
+                  </a>
+
+                  <a href="" target="_blank" class="applicant__link">
+                    <svg class="applicant__icon" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M22.9077 0C10.7059 0 0.815413 9.81374 0.815413 21.9208C0.815413 26.0623 1.974 29.936 3.98612 33.2392L0 45L12.2311 41.1147C15.396 42.8522 19.036 43.8417 22.9077 43.8417C35.1095 43.8417 45 34.025 45 21.9208C45 9.81665 35.1095 0 22.9077 0ZM22.9077 40.1717C19.1738 40.1717 15.6952 39.06 12.7884 37.1537L5.71959 39.3976L8.01623 32.6222C5.81345 29.6129 4.51408 25.9168 4.51408 21.9238C4.51408 11.8597 12.765 3.67287 22.9048 3.67287C33.0475 3.67287 41.2955 11.8597 41.2955 21.9238C41.2984 31.9849 33.0475 40.1717 22.9077 40.1717ZM33.2646 26.9034C32.7102 26.6036 29.9912 25.1455 29.4808 24.9389C28.9705 24.7322 28.598 24.6275 28.202 25.1717C27.806 25.7159 26.6768 26.9354 26.3336 27.2992C25.9904 27.6601 25.659 27.695 25.1046 27.3923C24.5532 27.0925 22.7581 26.4319 20.6756 24.447C19.0565 22.9016 17.9918 21.0274 17.6838 20.4569C17.3758 19.8836 17.6809 19.5925 17.9742 19.3248C18.2382 19.0832 18.5637 18.6903 18.8571 18.376C19.1504 18.0588 19.253 17.8318 19.4554 17.4651C19.6578 17.0984 19.5757 16.7695 19.4466 16.4843C19.3146 16.1991 18.291 13.4051 17.8657 12.2672C17.4374 11.1292 16.9623 11.298 16.6338 11.2864C16.3052 11.2747 15.9298 11.2136 15.5544 11.1991C15.1789 11.1845 14.563 11.3038 14.0233 11.8423C13.4865 12.3836 11.9759 13.6816 11.8733 16.4377C11.7706 19.1909 13.6889 21.9267 13.9558 22.3079C14.2227 22.6921 17.6222 28.6612 23.2685 31.1147C28.9177 33.5681 28.947 32.8201 29.9824 32.7649C31.0207 32.7096 33.3702 31.5338 33.8893 30.2474C34.4085 28.9581 34.4496 27.8376 34.3176 27.599C34.1885 27.3574 33.8189 27.2031 33.2646 26.9034Z"
+                        fill="#53C3BD" />
+                    </svg>
+                  </a>
+                </div>
+                <!-- /.applicant__social -->
+              </div>
+              <!-- /.applicant__contact -->
+            </div>
+            <!-- /.col-5 -->
+
+            <div class="col-3">
+              <div class="section__picture applicant__picture">
+                <img src="img/section/2.png" alt="" class="section__image">
+              </div>
+              <!-- /.section__picture -->
+            </div>
+            <!-- /.col-3 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.applicant -->
+      </div>
+      <!-- /.container -->
+    </section>
   </main>
 
   <!-- Подвал -->
