@@ -1,0 +1,26 @@
+#career {
+  margin-top: 95px;
+
+  .section__title {
+    margin-bottom: 55px;
+  }
+}
+
+.career {
+  margin-top: 70px;
+
+  &__title {
+    margin-bottom: 70px;
+
+    font-size: $font-size-1 - 2; // Чтобы влезть в 10 колонок
+
+    text-transform: uppercase;
+    text-align: center;
+
+    line-height: 44px;
+  }
+
+  &__advantages {
+
+  }
+}

@@ -12,6 +12,10 @@
     &--orange {
       color: $text-yellow;
     }
+
+    &--center {
+      text-align: center;
+    }
   }
 
   &__picture {
