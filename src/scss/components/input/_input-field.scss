@@ -8,10 +8,24 @@
   background-position-y: bottom;
   background-size: 100%;
 
-  transition: background-color 0.15s ease;
+  transition: all 0.15s ease;
 
   &::placeholder {
     color: $text-gray--light;
+  }
+
+  &--box {
+    background-image: url("../img/other/input-line--space.svg");
+    background-repeat: repeat;
+
+    min-height: 140px;
+
+    resize: none;
+
+    &:focus {
+      // Для плавного анимации исчезновения
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII=);
+    }
   }
 
   &--error {

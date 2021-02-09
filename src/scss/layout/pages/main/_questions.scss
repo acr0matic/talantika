@@ -1,0 +1,26 @@
+#questions {
+  margin-top: 170px;
+
+  .section__title {
+    margin-bottom: 65px;
+  }
+}
+
+.questions {
+  &__title {
+    margin-bottom: 20px;
+
+    font-weight: $weight-thin;
+    font-size: $font-size-3;
+
+    line-height: 26px;
+  }
+
+  &__description {
+
+  }
+
+  &__form {
+
+  }
+}

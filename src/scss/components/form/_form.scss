@@ -1,6 +1,10 @@
 .form {
   max-width: 330px;
 
+  .mb-4 {
+    margin-bottom: 35px !important;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
