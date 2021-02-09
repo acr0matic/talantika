@@ -1,0 +1,39 @@
+.hirer {
+  padding-top: 170px;
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-weight: $weight-thin;
+    font-size: $font-size-3;
+  }
+
+  &__list {
+    margin-bottom: 40px;
+  }
+
+  &__contact {
+    font-family: Avenir, sans-serif;
+    font-size: $font-size-3;
+    font-weight: $weight-bold;
+
+    text-transform: uppercase;
+  }
+
+  &__social {
+    margin-top: 30px;
+  }
+
+  &__link {
+    transition: opacity 0.15s ease;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__form {
+    position: relative;
+    top: -40px;
+  }
+}

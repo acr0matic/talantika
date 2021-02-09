@@ -1,0 +1,9 @@
+.list {
+  font-size: $font-size-4;
+
+  &__item {
+    &::before {
+      content: '- ';
+    }
+  }
+}

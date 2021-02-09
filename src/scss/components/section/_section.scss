@@ -1,0 +1,20 @@
+.section {
+  &__title {
+    margin-bottom: 40px;
+
+    font-size: $font-size-0;
+    text-transform: uppercase;
+
+    &--blue {
+      color: $text-blue;
+    }
+
+    &--orange {
+      color: $text-yellow;
+    }
+  }
+
+  &__picture {
+
+  }
+}
