@@ -32,6 +32,12 @@
   }
 
   &__description {
+    @include breakpoint($breakpoint-laptop) {
+      br {
+        display: none;
+      }
+    }
+
     @include breakpoint($breakpoint-tablet) {
       display: none;
     }

@@ -35,6 +35,9 @@
   &__button {
     position: relative;
     z-index: 1;
+
+    width: 100%;
+    min-width: unset;
   }
 
   &__error {
