@@ -65,6 +65,12 @@
       display: block;
       margin-bottom: 85px;
     }
+
+    img {
+      @include breakpoint($breakpoint-mobile-medium) {
+        width: 140px;
+      }
+    }
   }
 
   &__subtitle {
