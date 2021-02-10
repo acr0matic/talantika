@@ -1,0 +1,38 @@
+#contact {
+  margin-top: 95px;
+
+  .section__title {
+    margin-bottom: 56px;
+  }
+}
+
+.contact {
+  &__content {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 55px;
+    text-transform: uppercase;
+  }
+
+  &__social {
+    @include flex($justify: center);
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__link {
+    transition: opacity 0.15s ease;
+
+    &:not(:last-child) {
+      margin-right: 17px;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
