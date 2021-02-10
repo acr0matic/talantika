@@ -45,6 +45,8 @@
     }
 
     &--mobile {
+      display: none;
+
       @include breakpoint($breakpoint-tablet) {
         display: block;
       }
