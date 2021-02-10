@@ -3,7 +3,14 @@
 // -----------------------------------------------------------------------------
 
 #hero {
-  @include background('../img/section/hero/background.jpg', $position: center center);
+  @include background(
+    "../img/section/hero/background.jpg",
+    $position: center center
+  );
+
+  @include breakpoint($breakpoint-tablet) {
+    background-image: url("../img/section/hero/background--mobile.jpg");
+  }
 }
 
 .hero {
@@ -12,14 +19,22 @@
   padding-top: 220px;
   padding-bottom: 142px;
 
+  @include breakpoint($breakpoint-tablet) {
+    padding-top: 90px;
+    padding-bottom: 0;
+  }
+
   &__foreground {
     position: absolute;
     bottom: 0;
     left: 0;
+
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
   }
 
   &__content {
-
   }
 
   &__title {
@@ -29,6 +44,19 @@
 
   &__logo {
     margin-bottom: 10px;
+
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
+  }
+
+  &__mobile-logo {
+    display: none;
+
+    @include breakpoint($breakpoint-tablet) {
+      display: block;
+      margin-bottom: 85px;
+    }
   }
 
   &__subtitle {
@@ -37,18 +65,34 @@
     color: $text-white;
     font-size: $font-size-1;
     font-weight: $weight-regular;
+
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
   }
 
   &__description {
     margin-bottom: 40px;
+
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
   }
 
   &__action {
+    margin-bottom: 45px;
 
+    @include breakpoint($breakpoint-tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__button {
-    margin-bottom: 45px;
+    @include breakpoint($breakpoint-tablet) {
+      width: 90%;
+    }
   }
 
   &__slogan {
@@ -58,6 +102,10 @@
     font-weight: $weight-light;
 
     text-transform: uppercase;
+
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
 
     strong {
       font-weight: $weight-bold;

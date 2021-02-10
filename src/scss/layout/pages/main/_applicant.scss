@@ -1,5 +1,24 @@
+#applicant {
+  .section__picture {
+    @include breakpoint($breakpoint-tablet) {
+      right: -100px;
+      bottom: 330px;
+    }
+  }
+}
+
 .applicant {
   padding-top: 100px;
+
+  @include breakpoint($breakpoint-tablet) {
+    padding-top: 80px;
+  }
+
+  &__content {
+    @include breakpoint($breakpoint-tablet) {
+      text-align: center;
+    }
+  }
 
   &__title {
     margin-bottom: 20px;
@@ -19,10 +38,25 @@
     font-weight: $weight-bold;
 
     text-transform: uppercase;
+
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+      text-align: center;
+    }
+
+    &--mobile {
+      @include breakpoint($breakpoint-tablet) {
+        display: block;
+      }
+    }
   }
 
   &__social {
     margin-top: 30px;
+
+    @include breakpoint($breakpoint-tablet) {
+      justify-content: center;
+    }
   }
 
   &__link {

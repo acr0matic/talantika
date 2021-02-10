@@ -10,6 +10,35 @@
 
   background-color: $palette-white;
 
+  @include breakpoint($breakpoint-tablet) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &__title {
+    display: none;
+    font-weight: $weight-medium;
+    font-family: Avenir, sans-serif;
+
+    color: $text-gray;
+
+    @include breakpoint($breakpoint-tablet) {
+      display: block;
+    }
+  }
+
+  &__logo {
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
+  }
+
+  &__social {
+    @include breakpoint($breakpoint-tablet) {
+      display: none !important;
+    }
+  }
+
   &__link {
     &:hover path {
       fill: #52c3be;

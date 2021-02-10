@@ -3,13 +3,27 @@
 // -----------------------------------------------------------------------------
 
 footer {
+  position: relative;
   margin-top: 160px;
 
   padding: 30px 0;
   background-color: $palette-gray;
+
+  @include breakpoint($breakpoint-tablet) {
+    margin-top: 90px;
+    padding: 15px 0;
+  }
 }
 
 .footer {
+  &__col--mobile {
+    @include breakpoint($breakpoint-tablet) {
+      position: absolute;
+      right: 0;
+      bottom: 15px;
+    }
+  }
+
   &__logo {
     .logo {
       width: 100%;
@@ -19,13 +33,29 @@ footer {
     }
   }
 
+  &__company p {
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size-3;
+    }
+  }
+
   &__privacy {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @include breakpoint($breakpoint-tablet) {
+      align-items: center;
+
+      margin-bottom: 18px;
+    }
   }
 
   &__link {
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size-6;
+    }
+
     &::after {
       content: "";
       display: block;

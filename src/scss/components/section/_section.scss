@@ -1,9 +1,18 @@
 .section {
+  position: relative;
+
   &__title {
     margin-bottom: 40px;
 
     font-size: $font-size-0;
     text-transform: uppercase;
+
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 20px;
+
+      font-size: $font-size-1;
+      text-align: center;
+    }
 
     &--blue {
       color: $text-blue;
@@ -19,6 +28,13 @@
   }
 
   &__picture {
+    @include breakpoint($breakpoint-tablet) {
+      position: absolute;
+      z-index: -1;
 
+      img {
+        width: 180px;
+      }
+    }
   }
 }

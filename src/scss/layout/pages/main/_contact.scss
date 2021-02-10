@@ -4,6 +4,12 @@
   .section__title {
     margin-bottom: 56px;
   }
+
+  .section__picture {
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
+  }
 }
 
 .contact {
@@ -11,9 +17,25 @@
     text-align: center;
   }
 
+  &__description {
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
+  }
+
   &__title {
     margin-bottom: 55px;
+    line-height: 25px;
     text-transform: uppercase;
+
+    @include breakpoint($breakpoint-tablet) {
+      width: 60%;
+
+      margin-left: auto;
+      margin-right: auto;
+
+      margin-bottom: 30px;
+    }
   }
 
   &__social {

@@ -3,6 +3,16 @@
 
   .section__title {
     margin-bottom: 55px;
+
+    @include breakpoint($breakpoint-tablet) {
+      color: $text-yellow;
+    }
+  }
+
+  .section__picture {
+    @include breakpoint($breakpoint-tablet) {
+      position: static;
+    }
   }
 }
 
@@ -18,10 +28,26 @@
     text-align: center;
 
     line-height: 44px;
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size-2;
+      line-height: 30px;
+
+      margin-bottom: 40px;
+    }
+
+    @include breakpoint($breakpoint-mobile-medium) {
+      font-size: $font-size-3;
+      line-height: 26px;
+    }
   }
 
   &__advantages {
     margin-bottom: 75px;
+
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 45px;
+    }
   }
 
   &__button {

@@ -1,8 +1,19 @@
 #questions {
   margin-top: 170px;
 
+  @include breakpoint($breakpoint-tablet) {
+    margin-top: 80px;
+  }
+
   .section__title {
     margin-bottom: 65px;
+  }
+
+  .section__picture {
+    @include breakpoint($breakpoint-tablet) {
+      right: -80px;
+      bottom: 280px;
+    }
   }
 }
 
@@ -14,13 +25,18 @@
     font-size: $font-size-3;
 
     line-height: 26px;
+
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
   }
 
   &__description {
-
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
   }
 
   &__form {
-
   }
 }
