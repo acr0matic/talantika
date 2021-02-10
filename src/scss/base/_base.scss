@@ -20,6 +20,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   color: $text-black;
