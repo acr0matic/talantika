@@ -1,0 +1,12 @@
+.button-secondary {
+  color: $text-white;
+  background-color: $button-secondary;
+
+  &:hover {
+    background-color: $button-secondary__hover;
+  }
+
+  &:active {
+    background-color: $button-secondary__active;
+  }
+}

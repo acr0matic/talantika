@@ -8,8 +8,13 @@ $button-primary: #e93e3a;
 $button-primary__hover: #f2605c;
 $button-primary__active: #e92e2b;
 
+$button-secondary: #53c3bd;
+$button-secondary__hover: #5bd3cd;
+$button-secondary__active: #3fada8;
+
 $button-border--left: 13px 13px 13px 0;
 $button-border--right: 13px 13px 0 13px;
 
 @import "button";
 @import "button-primary";
+@import "button-secondary";

@@ -1,0 +1,18 @@
+.modal-info {
+  .modal__title {
+    font-size: $font-size-4;
+    font-weight: $weight-thin;
+
+    line-height: 28px;
+  }
+
+  .modal__container {
+    min-width: 505px;
+    min-height: 200px;
+
+    text-align: center;
+  }
+
+  .modal__content {
+  }
+}
