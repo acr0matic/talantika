@@ -4,13 +4,13 @@
   .section__title {
     margin-bottom: 55px;
 
-    @include breakpoint($breakpoint-tablet) {
+    @include breakpoint($breakpoint-tablet-large) {
       color: $text-yellow;
     }
   }
 
   .section__picture {
-    @include breakpoint($breakpoint-tablet) {
+    @include breakpoint($breakpoint-tablet-large) {
       position: static;
     }
   }
@@ -29,7 +29,7 @@
 
     line-height: 44px;
 
-    @include breakpoint($breakpoint-tablet) {
+    @include breakpoint($breakpoint-tablet-large) {
       font-size: $font-size-2;
       line-height: 30px;
 
@@ -45,7 +45,7 @@
   &__advantages {
     margin-bottom: 75px;
 
-    @include breakpoint($breakpoint-tablet) {
+    @include breakpoint($breakpoint-tablet-large) {
       margin-bottom: 45px;
     }
   }

@@ -8,7 +8,15 @@
     $position: center center
   );
 
+  @include breakpoint($breakpoint-laptop) {
+    background-position: 35% center;
+  }
+
   @include breakpoint($breakpoint-tablet) {
+    background-position: 50% center;
+  }
+
+  @include breakpoint($breakpoint-mobile-large) {
     background-image: url("../img/section/hero/background--mobile.jpg");
   }
 }

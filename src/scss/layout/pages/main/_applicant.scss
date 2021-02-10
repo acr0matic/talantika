@@ -1,5 +1,10 @@
 #applicant {
   .section__picture {
+    @include breakpoint($breakpoint-tablet-large) {
+      right: 30px;
+      bottom: 30px;
+    }
+
     @include breakpoint($breakpoint-tablet) {
       right: -100px;
       bottom: 330px;
@@ -32,7 +37,6 @@
         display: none;
       }
     }
-
   }
 
   &__list {

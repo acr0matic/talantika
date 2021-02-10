@@ -1,7 +1,7 @@
 #questions {
   margin-top: 170px;
 
-  @include breakpoint($breakpoint-tablet) {
+  @include breakpoint($breakpoint-tablet-large) {
     margin-top: 80px;
   }
 
@@ -10,6 +10,11 @@
   }
 
   .section__picture {
+    @include breakpoint($breakpoint-tablet-large) {
+      right: 90px;
+      bottom: 140px;
+    }
+
     @include breakpoint($breakpoint-tablet) {
       right: -80px;
       bottom: 280px;

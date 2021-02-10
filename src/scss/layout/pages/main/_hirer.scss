@@ -1,5 +1,10 @@
 #hirer {
   .section__picture {
+    @include breakpoint($breakpoint-tablet-large) {
+      bottom: 0;
+      left: 125px;
+    }
+
     @include breakpoint($breakpoint-tablet) {
       bottom: 320px;
       left: -125px;

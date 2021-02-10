@@ -8,10 +8,13 @@
     font-size: $font-size-0;
     text-transform: uppercase;
 
-    @include breakpoint($breakpoint-tablet) {
+    @include breakpoint($breakpoint-tablet-large) {
       margin-bottom: 20px;
 
       font-size: $font-size-1;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
       text-align: center;
     }
 
@@ -29,7 +32,7 @@
   }
 
   &__picture {
-    @include breakpoint($breakpoint-tablet) {
+    @include breakpoint($breakpoint-tablet-large) {
       position: absolute;
       z-index: -1;
 
