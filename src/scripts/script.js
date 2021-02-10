@@ -8,3 +8,4 @@ const modalParams = {
 };
 
 MicroModal.init(modalParams);
+scrollTo();
