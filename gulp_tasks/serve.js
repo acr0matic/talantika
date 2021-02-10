@@ -7,7 +7,7 @@ const { reload } = browserSync;
 
 gulp.task('serve', () => {
   browserSync.init({
-    server: './src/',
+    proxy: 'talantika.pro',
     port: 4000,
     notify: false,
   });
