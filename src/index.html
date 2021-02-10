@@ -216,7 +216,7 @@
             <!-- /.col-5 -->
 
             <div class="col-4">
-              <form class="hirer__form form" data-aos="zoom-out-left">
+              <form data-type="hirer" class="hirer__form form" data-aos="zoom-out-left">
                 <div class="row justify-content-center">
                   <div class="col-12">
                     <div class="form__wrapper mb-3">
@@ -224,14 +224,14 @@
                         Отправь заявку <br> прямо сейчас
                       </h3>
 
-                      <input autocomplete="off" type="text" class="input input-field input-field--error mb-4" name="user_name" placeholder="Имя">
-                      <input autocomplete="off" type="email" class="input input-field mb-4" name="user_email" placeholder="Эл. почта*">
+                      <input autocomplete="off" type="text" class="input input-field mb-4" name="user_name" placeholder="Имя">
+                      <input data-required autocomplete="off" type="email" class="input input-field mb-4" name="user_email" placeholder="Эл. почта*">
                       <input autocomplete="off" type="text" class="input input-field mb-4" name="user_job" placeholder="Искомая должность">
-                      <input autocomplete="off" type="phone" class="input input-field mb-4" name="user_phone" placeholder="Телефон">
+                      <input autocomplete="off" type="tel" class="input input-field mb-4" name="user_phone" placeholder="Телефон">
                       <input autocomplete="off" type="text" class="input input-field mb-4" name="user_city" placeholder="Город">
 
-                      <button class="form__button button button--border-left button-primary mx-auto">Отправить</button>
-                      <div class="form__error mx-auto">Ошибка при вводе!</div>
+                      <button disabled class="form__button button button--border-left button-primary mx-auto">Отправить</button>
+                      <div class="form__error mx-auto">Не указан E-mail!</div>
                     </div>
                     <!-- /.form__wrapper -->
                   </div>
@@ -263,7 +263,7 @@
         <div class="applicant">
           <div class="row">
             <div class="col-4">
-              <form class="applicant__form form ms-5" data-aos="zoom-out-right">
+              <form data-type="applicant" class="applicant__form form ms-5" data-aos="zoom-out-right">
                 <div class="row justify-content-center">
                   <div class="col-12">
                     <div class="form__wrapper mb-3">
@@ -271,14 +271,14 @@
                         Отправь заявку <br> прямо сейчас
                       </h3>
 
-                      <input autocomplete="off" type="text" class="input input-field input-field--error mb-4" name="user_name" placeholder="Имя">
-                      <input autocomplete="off" type="email" class="input input-field mb-4" name="user_email" placeholder="Эл. почта*">
+                      <input autocomplete="off" type="text" class="input input-field mb-4" name="user_name" placeholder="Имя">
+                      <input data-required autocomplete="off" type="email" class="input input-field mb-4" name="user_email" placeholder="Эл. почта*">
                       <input autocomplete="off" type="text" class="input input-field mb-4" name="user_job" placeholder="Искомая должность">
-                      <input autocomplete="off" type="phone" class="input input-field mb-4" name="user_phone" placeholder="Телефон">
+                      <input autocomplete="off" type="tel" class="input input-field mb-4" name="user_phone" placeholder="Телефон">
                       <input autocomplete="off" type="text" class="input input-field mb-4" name="user_city" placeholder="Город">
 
-                      <button class="form__button button button--border-right button-primary mx-auto">Отправить</button>
-                      <div class="form__error mx-auto">Ошибка при вводе!</div>
+                      <button disabled class="form__button button button--border-right button-primary mx-auto">Отправить</button>
+                      <div class="form__error mx-auto">Не указан E-mail!</div>
                     </div>
                     <!-- /.form__wrapper -->
                   </div>
@@ -463,7 +463,7 @@
         <div class="questions">
           <div class="row">
             <div class="col-4">
-              <form class="questions__form form ms-5" data-aos="zoom-out-right">
+              <form data-type="question" class="questions__form form ms-5" data-aos="zoom-out-right">
                 <div class="row justify-content-center">
                   <div class="col-12">
                     <div class="form__wrapper mb-3">
@@ -471,13 +471,13 @@
                         Задай вопрос
                       </h3>
 
-                      <input autocomplete="off" type="text" class="input input-field input-field--error mb-4" name="user_name" placeholder="Имя">
-                      <input autocomplete="off" type="email" class="input input-field mb-4" name="user_email" placeholder="Эл. почта*">
-                      <input autocomplete="off" type="phone" class="input input-field mb-4" name="user_phone" placeholder="Телефон">
+                      <input autocomplete="off" type="text" class="input input-field mb-4" name="user_name" placeholder="Имя">
+                      <input data-required="" autocomplete="off" type="email" class="input input-field mb-4" name="user_email" placeholder="Эл. почта*">
+                      <input autocomplete="off" type="tel" class="input input-field mb-4" name="user_phone" placeholder="Телефон">
                       <textarea autocomplete="off" type="text" class="input input-field input-field--box mb-4" name="user_city" placeholder="Вопрос"></textarea>
 
-                      <button class="form__button button button--border-right button-primary mx-auto">Отправить</button>
-                      <div class="form__error mx-auto">Ошибка при вводе!</div>
+                      <button disabled class="form__button button button--border-right button-primary mx-auto">Отправить</button>
+                      <div class="form__error mx-auto">Не указан E-mail!</div>
                     </div>
                     <!-- /.form__wrapper -->
                   </div>
@@ -711,7 +711,9 @@
   <!-- build:js -->
   <script src="scripts/libraries/aos.js"></script>
   <script src="scripts/libraries/micromodal.js"></script>
+  <script src="scripts/libraries/imask.js"></script>
 
+  <script src="scripts/forms.js"></script>
   <script src="scripts/script.js"></script>
   <!-- endbuild -->
 </body>
