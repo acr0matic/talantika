@@ -7,6 +7,7 @@ forms.forEach(form => {
   const checkbox = form.querySelector('input[type=checkbox]');
   const submit = form.querySelector('button');
 
+  const fields = form.querySelectorAll('input');
   const requiredFields = form.querySelectorAll('[data-required]');
 
   let formData;
@@ -26,7 +27,7 @@ forms.forEach(form => {
   });
 
   checkbox.addEventListener('change', () => {
-    if (checkbox.checked) submit.removeAttribute('disabled');
+    if (!checkbox.checked) submit.removeAttribute('disabled');
     else submit.setAttribute('disabled', 'disabled');
   });
 
@@ -49,7 +50,7 @@ forms.forEach(form => {
         if (formType === 'question') MicroModal.show('modal-question', modalParams);
         else MicroModal.show('modal-accept', modalParams);
 
-        ClearForm(requiredFields);
+        ClearForm(fields);
       }
 
       catch {
