@@ -11,6 +11,7 @@
   background-color: $palette-white;
 
   @include breakpoint($breakpoint-tablet) {
+    flex-direction: column;
     padding-top: 15px;
     padding-bottom: 15px;
   }
@@ -28,6 +29,23 @@
   }
 
   &__logo {
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @include breakpoint($breakpoint-mobile-large) {
+        display: block;
+      }
+    }
+  }
+
+  &__nav {
+    margin-left: 50px;
+    margin-right: auto;
+
     @include breakpoint($breakpoint-tablet) {
       display: none;
     }

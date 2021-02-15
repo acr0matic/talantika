@@ -11,13 +11,14 @@
 
   .section__picture {
     @include breakpoint($breakpoint-tablet-large) {
-      right: 90px;
       bottom: 140px;
+      left: 90px;
     }
 
     @include breakpoint($breakpoint-tablet) {
       right: -80px;
       bottom: 280px;
+      left: unset;
     }
   }
 }

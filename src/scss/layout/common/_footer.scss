@@ -9,6 +9,8 @@ footer {
   padding: 30px 0;
   background-color: $palette-gray;
 
+  color: $text-white;
+
   @include breakpoint($breakpoint-tablet-large) {
     margin-top: 90px;
     padding: 15px 0;
@@ -28,14 +30,14 @@ footer {
     .logo {
       width: 100%;
       max-width: 95px;
-
-      margin-top: 15px;
     }
   }
 
   &__company p {
-    @include breakpoint($breakpoint-tablet-large) {
-      font-size: $font-size-3;
+    font-size: $font-size-3;
+
+    @include breakpoint($breakpoint-mobile-medium) {
+      font-size: $font-size-4;
     }
   }
 
@@ -54,6 +56,9 @@ footer {
   }
 
   &__link {
+    color: $text-white;
+    font-size: $font-size-4;
+
     @include breakpoint($breakpoint-tablet-large) {
       font-size: $font-size-6;
     }
@@ -65,7 +70,7 @@ footer {
       width: 100%;
       height: 1px;
 
-      background-color: #767878;
+      background-color: #ffffff;
     }
   }
 }

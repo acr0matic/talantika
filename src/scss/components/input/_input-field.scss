@@ -28,6 +28,11 @@
       // Для плавного анимации исчезновения
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII=);
     }
+
+    @include breakpoint(max-width 330px) {
+      min-height: 100px;
+      background-position-y: 30px;
+    }
   }
 
   &--error {

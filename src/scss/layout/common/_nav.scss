@@ -1,0 +1,21 @@
+.nav {
+  &__list {
+    @include flex();
+  }
+
+  &__item {
+    font-size: $font-size-4;
+
+    @include breakpoint($breakpoint-tablet-large) {
+      font-size: $font-size-5;
+    }
+
+    &:not(:last-child) {
+      margin-right: 45px;
+
+      @include breakpoint($breakpoint-tablet-large) {
+        margin-right: 25px;
+      }
+    }
+  }
+}

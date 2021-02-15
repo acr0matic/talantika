@@ -17,7 +17,22 @@
   }
 
   @include breakpoint($breakpoint-mobile-large) {
-    background-image: url("../img/section/hero/background--mobile.jpg");
+    position: relative;
+
+    background-image: none;
+    background-color: #f5c423;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 170px;
+      height: 20px;
+
+      background-color: #c6c6c6;
+    }
   }
 }
 
@@ -30,6 +45,10 @@
   @include breakpoint($breakpoint-tablet) {
     padding-top: 90px;
     padding-bottom: 0;
+  }
+
+  @include breakpoint($breakpoint-mobile-large) {
+    padding-top: 60px;
   }
 
   &__foreground {
@@ -58,18 +77,29 @@
     }
   }
 
+  &__mobile-foreground {
+    display: none;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      display: block;
+    }
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
   &__mobile-logo {
     display: none;
 
     @include breakpoint($breakpoint-tablet) {
       display: block;
-      margin-bottom: 85px;
+
+      margin-bottom: 80px;
     }
 
-    img {
-      @include breakpoint($breakpoint-mobile-medium) {
-        width: 140px;
-      }
+    @include breakpoint($breakpoint-mobile-large) {
+      display: none;
     }
   }
 

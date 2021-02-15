@@ -9,4 +9,11 @@
   &:active {
     background-color: $button-primary__active;
   }
+
+  &:hover,
+  &:active {
+    @include breakpoint($breakpoint-tablet-large) {
+      background-color: $button-primary;
+    }
+  }
 }
