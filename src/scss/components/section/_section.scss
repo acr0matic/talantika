@@ -34,7 +34,6 @@
   &__picture {
     @include breakpoint($breakpoint-tablet-large) {
       position: absolute;
-      z-index: -1;
 
       img {
         width: 180px;

@@ -40,6 +40,10 @@
 
   cursor: pointer;
 
+  @include breakpoint($breakpoint-mobile-large) {
+    display: none;
+  }
+
   path {
     transition: fill 0.15s ease;
   }
@@ -50,6 +54,12 @@
 }
 
 .modal__content {
+}
+
+.modal__button {
+  @include breakpoint($breakpoint-mobile-large) {
+    width: 50%;
+  }
 }
 
 @keyframes mmfadeIn {

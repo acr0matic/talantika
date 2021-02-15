@@ -7,7 +7,7 @@ forms.forEach(form => {
   const checkbox = form.querySelector('input[type=checkbox]');
   const submit = form.querySelector('button');
 
-  const fields = form.querySelectorAll('input');
+  const fields = form.querySelectorAll('input, textarea');
   const requiredFields = form.querySelectorAll('[data-required]');
 
   let formData;
@@ -44,8 +44,8 @@ forms.forEach(form => {
           body: formData,
         });
 
-        let result = await response.json();
-        console.log(result)
+        // let result = await response.json();
+        // console.log(result)
 
         if (formType === 'question') MicroModal.show('modal-question', modalParams);
         else MicroModal.show('modal-accept', modalParams);
