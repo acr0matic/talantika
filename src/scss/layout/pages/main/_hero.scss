@@ -129,13 +129,16 @@
     @include breakpoint($breakpoint-tablet) {
       display: flex;
       flex-direction: column;
+    }
+
+    @include breakpoint($breakpoint-mobile-large) {
       align-items: center;
     }
   }
 
   &__button {
     @include breakpoint($breakpoint-tablet) {
-      width: 90%;
+      width: 260px;
     }
   }
 
